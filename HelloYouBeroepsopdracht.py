@@ -3,11 +3,11 @@ import os
 def cls():
     os.system("clear")
 
-def doorstuurFunctie(input1, input2, answer):
+def doorstuurFunctie(keuzeA, keuzeB, answer):
     if answer == "A" or answer == "a":
-        input1()
+        keuzeA()
     if answer == "B" or answer == "b":
-        input2()
+        keuzeB()
     if answer == "restart" or answer == "Restart" or answer == "Reset" or answer == "reset":
         voorstellen()
 
