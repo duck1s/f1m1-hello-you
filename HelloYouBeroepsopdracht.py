@@ -3,12 +3,12 @@ import os
 def cls():
     os.system("clear")
 
-def doorstuurFunctie(keuzeA, keuzeB, answer):
-    if answer == "A" or answer == "a":
+def doorstuurFunctie(keuzeA, keuzeB, antwoord):
+    if antwoord == "A" or antwoord == "a":
         keuzeA()
-    if answer == "B" or answer == "b":
+    if antwoord == "B" or antwoord == "b":
         keuzeB()
-    if answer == "restart" or answer == "Restart" or answer == "Reset" or answer == "reset":
+    if antwoord == "restart" or antwoord == "Restart" or antwoord == "Reset" or antwoord == "reset":
         voorstellen()
 
 # Voorstellen
@@ -38,8 +38,8 @@ def beginscene():
     print("    A. ren naar buiten om te kijken wat er is")
     print("    B. ren naar mijn vader omdat ik bang ben")
 
-    answer = input()
-    doorstuurFunctie(stukje2, stukje3, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje2, stukje3, antwoord)
 
 def stukje2():
     cls()
@@ -53,8 +53,8 @@ def stukje2():
           "    A. ren samen met iedereen naar buiten\n"
           "    B. blijf in de gevangenis want ik durf niet")
 
-    answer = input()
-    doorstuurFunctie(stukje4, stukje5, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje4, stukje5, antwoord)
 
 def stukje3():
     cls()
@@ -66,8 +66,8 @@ def stukje3():
           "    A. Nederland\n"
           "    B. Spanje")
 
-    answer = input()
-    doorstuurFunctie(stukje6, stukje7, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje6, stukje7, antwoord)
 
 def stukje6():
     cls()
@@ -90,8 +90,8 @@ def stukje7():
           "    A. Het politiebureau\n"
           "    B. Een gemeentehuis")
 
-    answer = input()
-    doorstuurFunctie(stukje8, stukje9, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje8, stukje9, antwoord)
 
 def stukje8():
     cls()
@@ -122,8 +122,8 @@ def stukje10():
           "    A. Loodgieter\n"
           "    B. Advocaat")
 
-    answer = input()
-    doorstuurFunctie(stukje11, stukje12, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje11, stukje12, antwoord)
 
 def stukje11():
     cls()
@@ -135,11 +135,11 @@ def stukje11():
           "    A. Een nieuw huis en een auto\n"
           "    B. Een eigen bedrijf oprichten")
 
-    answer = input()
-    if answer == "A" or answer == "a":
+    antwoord = input()
+    if antwoord == "A" or antwoord == "a":
         print("\n"
               "Einde!")
-    if answer == "B" or answer == "b":
+    if antwoord == "B" or antwoord == "b":
         print("\n"
               "Einde")
 
@@ -172,8 +172,8 @@ def stukje5():
           "    A. Ontsnappen en vluchten naar het vliegveld\n"
           "    B. Blijven en wachten waar we naartoe gaan")
 
-    answer = input()
-    doorstuurFunctie(stukje13, stukje14, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje13, stukje14, antwoord)
 
 def stukje14():
     cls()
@@ -186,8 +186,8 @@ def stukje14():
           "    A. Vertrek naar andere dorpen om mensen daar te helpen.\n"
           "    B. Ga naar het vliegveld om daar mensen het verzet te laten joinen.")
 
-    answer = input()
-    doorstuurFunctie(stukje19, stukje20, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje19, stukje20, antwoord)
 
 def stukje19():
     cls()
@@ -227,8 +227,8 @@ def stukje13():
           "    A. Vragen aan iemand die er niet gevaarlijk uitziet wat we moeten doen.\n"
           "    B. Rennen naar een vliegtuig en stappen in")
 
-    answer = input()
-    doorstuurFunctie(stukje15, stukje16, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje15, stukje16, antwoord)
 
 def stukje15():
     cls()
@@ -247,8 +247,8 @@ def stukje16():
           "    A. Blijven in de laadruimte\n"
           "    B. Breken in bij de cabine voor mensen")
 
-    answer = input()
-    doorstuurFunctie(stukje17, stukje18, answer)
+    antwoord = input()
+    doorstuurFunctie(stukje17, stukje18, antwoord)
 
 def stukje17():
     cls()
