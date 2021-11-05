@@ -3,7 +3,7 @@ import os
 def cls():
     os.system("clear")
 
-def voorbeeldFunctie(input1, input2, answer):
+def doorstuurFunctie(input1, input2, answer):
     if answer == "A" or answer == "a":
         input1()
     if answer == "B" or answer == "b":
@@ -18,8 +18,8 @@ def voorstellen():
           "Zoals jullie misschien al verwachten, woon ik niet heel mijn leven in Nederland. \n"
           "Ik ben namelijk een vluchteling. Toen ik 12 was ben ik samen met mijn gezin gevlucht\n"
           "vanuit Afghanistan naar Europa en uiteindelijk door naar Nederland. Ik ben een \n"
-          "aardige en verlegen jongen met een gezellige en fijn gezin. Mijn gezin bestaat uit \n"
-          "mijn vader, moeder, zusje en ik. Samen zijn wij met 4 mensen.")
+          "aardige en verlegen jongen met een gezellig en fijn gezin. Mijn gezin bestaat uit \n"
+          "mijn vader, moeder, zusje en ik.")
     input()
     beginscene()
 
@@ -32,14 +32,14 @@ def beginscene():
           "en de dag daarna nog minder. Nu begon ik het raar te vinden. Ik ging naar mijn \n"
           "vader om te vragen waar iedereen naartoe was. Mijn vader vertelde me dat het \n"
           "sommige mensen bang waren dat er een oorlog zou komen. Later die avond hoorde \n"
-          "ik opeens heel hard geluid. Toen wist ik nog niet wat dat was, maar nu weet ik \n"
-          "dat het schoten waren die ik die avond hoorde. Ik ... \n"
+          "ik opeens heel hard geluid. \n"
+          " Ik ... \n"
           "")
     print("    A. ren naar buiten om te kijken wat er is")
     print("    B. ren naar mijn vader omdat ik bang ben")
 
     answer = input()
-    voorbeeldFunctie(stukje2, stukje3, answer)
+    doorstuurFunctie(stukje2, stukje3, answer)
 
 def stukje2():
     cls()
@@ -54,7 +54,7 @@ def stukje2():
           "    B. blijf in de gevangenis want ik durf niet")
 
     answer = input()
-    voorbeeldFunctie(stukje4, stukje5, answer)
+    doorstuurFunctie(stukje4, stukje5, answer)
 
 def stukje3():
     cls()
@@ -67,7 +67,7 @@ def stukje3():
           "    B. Spanje")
 
     answer = input()
-    voorbeeldFunctie(stukje6, stukje7, answer)
+    doorstuurFunctie(stukje6, stukje7, answer)
 
 def stukje6():
     cls()
@@ -91,7 +91,7 @@ def stukje7():
           "    B. Een gemeentehuis")
 
     answer = input()
-    voorbeeldFunctie(stukje8, stukje9, answer)
+    doorstuurFunctie(stukje8, stukje9, answer)
 
 def stukje8():
     cls()
@@ -123,7 +123,7 @@ def stukje10():
           "    B. Advocaat")
 
     answer = input()
-    voorbeeldFunctie(stukje11, stukje12, answer)
+    doorstuurFunctie(stukje11, stukje12, answer)
 
 def stukje11():
     cls()
@@ -137,9 +137,11 @@ def stukje11():
 
     answer = input()
     if answer == "A" or answer == "a":
-        print("Einde!")
+        print("\n"
+              "Einde!")
     if answer == "B" or answer == "b":
-        stukje9("Einde!")
+        print("\n"
+              "Einde")
 
 def stukje12():
     cls()
@@ -155,6 +157,7 @@ def stukje4():
     cls()
     print("Buiten zien we allemaal soldaten. We moeten heel snel rennen. \n"
           "Ze zijn veel sneller en ze hebben guns. Ze schieten ons neer. \n"
+          "\n"
           "Einde.")
 
 def stukje5():
@@ -170,7 +173,7 @@ def stukje5():
           "    B. Blijven en wachten waar we naartoe gaan")
 
     answer = input()
-    voorbeeldFunctie(stukje13, stukje14, answer)
+    doorstuurFunctie(stukje13, stukje14, answer)
 
 def stukje14():
     cls()
@@ -184,7 +187,7 @@ def stukje14():
           "    B. Ga naar het vliegveld om daar mensen het verzet te laten joinen.")
 
     answer = input()
-    voorbeeldFunctie(stukje19, stukje20, answer)
+    doorstuurFunctie(stukje19, stukje20, answer)
 
 def stukje19():
     cls()
@@ -225,7 +228,7 @@ def stukje13():
           "    B. Rennen naar een vliegtuig en stappen in")
 
     answer = input()
-    voorbeeldFunctie(stukje15, stukje16, answer)
+    doorstuurFunctie(stukje15, stukje16, answer)
 
 def stukje15():
     cls()
@@ -245,7 +248,7 @@ def stukje16():
           "    B. Breken in bij de cabine voor mensen")
 
     answer = input()
-    voorbeeldFunctie(stukje17, stukje18, answer)
+    doorstuurFunctie(stukje17, stukje18, answer)
 
 def stukje17():
     cls()
